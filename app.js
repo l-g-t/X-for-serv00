@@ -53,7 +53,7 @@ const WORKDIR = path.join('/home', USERNAME, 'domains', `${USERNAME_DOMAIN}.ct8.
 process.chdir(WORKDIR);
 
 app.get("/info", function (req, res) {
-    res.type("html").send("<pre>Powered by X-for-Serv00\nAuthor: <a href='https://github.com/k0baya'>K0baya</a>" + "</pre>");
+    res.type("html").send("<pre>Powered by X-for-Serv00" + "</pre>");
 });
 
 app.get(`/${UUID}/sub`, function (req, res) {
